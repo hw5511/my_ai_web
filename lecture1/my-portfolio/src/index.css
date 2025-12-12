@@ -1,0 +1,113 @@
+/* CSS 초기화 */
+* {
+  box-sizing: border-box;
+}
+
+/* HTML, Body 초기화 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Root 앱 컨테이너 설정 */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  /* ========================================
+     Primary Colors - 브랜드 핵심 색상
+     ======================================== */
+  --color-primary: #C41E3A;
+  --color-primary-light: #E8828C;
+  --color-primary-dark: #9E1830;
+
+  /* ========================================
+     Secondary Colors - 보조 색상
+     ======================================== */
+  --color-secondary: #9B7BB8;
+  --color-secondary-light: #C9A8E0;
+  --color-secondary-dark: #7B5BA8;
+  --color-accent: #E63946;
+
+  /* ========================================
+     Background Colors - 배경 색상
+     ======================================== */
+  --color-bg-primary: #FDF5F3;
+  --color-bg-secondary: #FCEAEA;
+  --color-bg-tertiary: #FFF8F6;
+  --color-bg-accent: #F8C8D4;
+
+  /* ========================================
+     Text Colors - 텍스트 색상
+     ======================================== */
+  --color-text-primary: #2D2D2D;
+  --color-text-secondary: #4A4A4A;
+  --color-text-muted: #6B6B6B;
+  --color-text-light: #8A8A8A;
+  --color-text-inverse: #FFFFFF;
+
+  /* ========================================
+     Interactive Colors - 상호작용 요소
+     ======================================== */
+  --color-button-primary: #C41E3A;
+  --color-button-hover: #9E1830;
+  --color-button-secondary: #9B7BB8;
+  --color-button-secondary-hover: #7B5BA8;
+  --color-link: #C41E3A;
+  --color-link-hover: #9B7BB8;
+  --color-link-visited: #7B5BA8;
+
+  /* ========================================
+     Utility Colors - 유틸리티 색상
+     ======================================== */
+  --color-border: #F4ACB7;
+  --color-border-light: #FADCE3;
+  --color-shadow: rgba(196, 30, 58, 0.1);
+  --color-overlay: rgba(45, 45, 45, 0.5);
+
+  /* ========================================
+     Semantic Colors - 의미적 색상
+     ======================================== */
+  --color-success: #4CAF50;
+  --color-warning: #F5E6D3;
+  --color-error: #E63946;
+  --color-info: #9B7BB8;
+
+  /* ========================================
+     Gradient Definitions - 그라데이션
+     ======================================== */
+  --gradient-primary: linear-gradient(135deg, #C41E3A 0%, #E8828C 100%);
+  --gradient-secondary: linear-gradient(135deg, #9B7BB8 0%, #C9A8E0 100%);
+  --gradient-background: linear-gradient(180deg, #FDF5F3 0%, #FCEAEA 100%);
+  --gradient-accent: linear-gradient(135deg, #F8C8D4 0%, #FADCE3 100%);
+
+  /* Font settings */
+  font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+a {
+  color: var(--color-link);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
