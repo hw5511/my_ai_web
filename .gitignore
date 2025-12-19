@@ -25,3 +25,6 @@ nul
 # Logs
 *.log
 npm-debug.log*
+
+# MCP config
+.mcp.json
