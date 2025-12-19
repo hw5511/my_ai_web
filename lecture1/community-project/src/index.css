@@ -1,0 +1,61 @@
+/* CSS 초기화 */
+* {
+  box-sizing: border-box;
+}
+
+/* HTML, Body 초기화 */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Root 앱 컨테이너 설정 */
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 다크 테마 기본 배경 */
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+}
+
+/* 스크롤바 스타일링 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #00ff88;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc6a;
+}
+
+/* 선택 영역 스타일 */
+::selection {
+  background: rgba(0, 255, 136, 0.3);
+  color: #ffffff;
+}
+
+/* 링크 기본 스타일 */
+a {
+  color: #00ff88;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66ffb2;
+}

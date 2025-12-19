@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
+import GuestbookSection from '../components/landing/GuestbookSection';
 
 /**
  * HomePage 컴포넌트
@@ -271,37 +272,20 @@ function HomePage() {
         }}
       >
         <Container maxWidth="md">
-          <Card
+          <Typography
+            variant="h3"
+            component="h2"
             sx={{
-              backgroundColor: 'rgba(255, 255, 255, 0.9)',
-              border: '1px solid #F4ACB7',
-              p: { xs: 3, md: 5 },
+              color: 'primary.main',
+              fontWeight: 600,
+              fontSize: { xs: '1.5rem', md: '2rem' },
+              mb: 4,
+              textAlign: 'center',
             }}
           >
-            <CardContent sx={{ textAlign: 'center' }}>
-              <Typography
-                variant="h3"
-                component="h2"
-                sx={{
-                  color: 'primary.main',
-                  fontWeight: 600,
-                  fontSize: { xs: '1.5rem', md: '2rem' },
-                  mb: 3,
-                }}
-              >
-                Contact
-              </Typography>
-              <Typography
-                variant="body1"
-                sx={{
-                  color: 'text.secondary',
-                  lineHeight: 1.8,
-                }}
-              >
-                여기는 Contact 섹션입니다. 연락처, SNS, 간단한 메시지 폼이 들어갈 예정입니다.
-              </Typography>
-            </CardContent>
-          </Card>
+            Contact
+          </Typography>
+          <GuestbookSection />
         </Container>
       </Box>
     </Box>
